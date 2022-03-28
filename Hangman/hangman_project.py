@@ -8,6 +8,7 @@ answer_guesses = []
 
 for current_answer_characters in answer_characters:
   if re.search("^[A-Z]$", current_answer_characters):
+    answer_guesses.append(False)
   else:
     answer_guesses.append(True)
     
